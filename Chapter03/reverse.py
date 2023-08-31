@@ -1,22 +1,15 @@
-a = int(input())
-b = int(input())
+a = input()
+b = input()
 
-c = int(a / 100)
-d = int((a - (c * 100)) / 10)
-dd = int(a % 100)
-e = dd % 10
+al = len(a)
+bl = len(b)
 
-f = int(b / 100)
-g = int((b - (f * 100)) / 10)
-hh = int(b % 100)
-h = hh % 10
+ra = a[al::-1]
+rb = b[bl::-1]
 
-i = (e * 100) + (d * 10) + c
-j = (h * 100) + (g * 10) + f
-
-if i == j:
+if ra == rb:
     print(a, "=", b)
-elif i < j:
+elif ra < rb:
     print(a, "<", b)
 else:
     print(b, "<", a)
