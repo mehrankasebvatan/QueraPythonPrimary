@@ -1,0 +1,8 @@
+a, b, c, d, e, f = input().split()
+a2 = 1 - int(a)
+b2 = 1 - int(b)
+c2 = 2 - int(c)
+d2 = 2 - int(d)
+e2 = 2 - int(e)
+f2 = 8 - int(f)
+print(a2, b2, c2, d2, e2, f2)
